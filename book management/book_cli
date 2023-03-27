@@ -1,0 +1,97 @@
+import json
+
+# Get book details from user input
+book = {}
+book['title'] = input("Enter the title of the book: ")
+book['author'] = input("Enter the author of the book: ")
+book['publisher'] = input("Enter the publisher of the book: ")
+book['year'] = input("Enter the year of publication: ")
+
+# Write book details to JSON file
+with open('books.json', 'a') as f:
+    f.write(json.dumps(book) + '\n')
+
+
+
+
+
+import json
+
+# Open the books JSON file
+with open('books.json', 'r') as f:
+    books = f.readlines()
+
+# Define the number of books to display per page
+page_size = 10
+
+# Loop through the books and display them in pages
+start = 0
+end = page_size
+while start < len(books):
+    print('\n'.join([json.loads(b)['title'] for b in books[start:end]]))
+    if end >= len(books):
+        break
+    inp = input("Press 'n' for next records:")
+    if inp.lower() == 'n':
+        start += page_size
+        end += page_size
+
+
+
+
+
+
+
+
+
+
+import json
+
+# Get the title of the book to update
+title = input("Enter the title of the book to update: ")
+
+# Open the books JSON file and read the books into a list
+with open('books.json', 'r') as f:
+    books = f.readlines()
+
+# Loop through the books and find the book with the specified title
+for i in range(len(books)):
+    book = json.loads(books[i])
+    if book['title'] == title:
+        # Update the book details
+        book['author'] = input("Enter the new author name: ")
+        book['publisher'] = input("Enter the new publisher name: ")
+        book['year'] = input("Enter the new year of publication: ")
+        # Write the updated book details to the JSON file
+        books[i] = json.dumps(book) + '\n'
+        with open('books.json', 'w') as f:
+            f.writelines(books)
+        print("Book details updated successfully!")
+        break
+else:
+    print("Book not found!")
+
+
+
+
+
+
+
+import json
+
+# Get the title of the book to delete
+title = input("Enter the title of the book to delete: ")
+
+# Open the books JSON file and read the books into a list
+with open('books.json', 'r') as f:
+    books = f.readlines()
+
+# Loop through the books and find the book with the specified title
+for i in range(len(books)):
+    book = json.loads(books[i])
+    if book['title'] == title:
+        # Delete the book from the list
+        del books[i]
+        # Write the updated list to the JSON file
+        with open('books.json', 'w') as f:
+            f.writelines(books)
