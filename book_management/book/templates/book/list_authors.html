@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+</head>
+<body>
+    <button onclick="window.location.href='/add_book'">Add Book</button>
+    <h1>List of Authors</h1>
+  <ul>
+      {% for author in authors %}
+          <li>{{ author }}</li>
+      {% empty %}
+          <li>No authors found.</li>
+      {% endfor %}
+  </ul>
+  <form action="{% url 'list_books' %}" method="get">
+    <button type="submit">List Books</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "title": "Mrityunjaya",
+        "author": "Shivaji Sawant",
+        "description": "autobiography of Karna"
+    },
+    {
+        "id": 2,
+        "title": "Yayati",
+        "author": "V. S. Khandekar",
+        "description": "the story of the mythical Hindu king, Yayati, from the Hindu epic the Mahabharata. "
+    },
+    {
+        "id": 3,
+        "title": "Immortals of Meluha",
+        "author": "Amish Tripathi",
+        "description": " the first book of Shiva Trilogy. The story is set in the land of Meluha and starts with the arrival of the Shiva."
+    },
+    {
+        "id": 4,
+        "title": "The Secret of the Nagas",
+        "author": "Amish Tripathi",
+        "description": " The story takes place in the imaginary land of Meluha and narrates how the inhabitants of that land are saved from their wars by a nomad named Shiva."
+    },
+    {
+        "id": 5,
+        "title": "The Oath of the Vayuputras",
+        "author": "Amish Tripathi",
+        "description": " the third book of Shiva Trilogy"
+    },
+    {
+        "id": 6,
+        "title": "Ravan",
+        "author": "Sharad tandale",
+        "description": "Autobiography of ravana"
+    },
+    {
+        "id": 7,
+        "title": "Five Point Someone",
+        "author": "Chetan Bhagat",
+        "description": "In five Point Someone, he describes the perennial themes like parental pressure on children for getting admission in highly competitive institute, earn high grades, get a good job, poverty, exploitation at job place, ill effects of domestic quarrel etc."
+    },
+    {
+        "id": 8,
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J. K. Rowling",
+        "description": "The first novel in the Harry Potter series"
+    },
+    {
+        "id": 9,
+        "title": "Harry Potter and the Chamber of Secrets",
+        "author": " J. K. Rowling",
+        "description": "second novel in the Harry Potter series"
+    },
+    {
+        "id": 10,
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "author": "J. K. Rowling",
+        "description": "third in the Harry Potter series"
+    },
+    {
+        "id": 11,
+        "title": "Harry Potter and the Goblet of Fire",
+        "author": "J. K. Rowling",
+        "description": "fourth novel in the Harry Potter series"
+    },
+    {
+        "id": 12,
+        "title": "Harry Potter and the Order of the Phoenix ",
+        "author": " J. K. Rowling",
+        "description": " fifth novel in the Harry Potter series."
+    },
+    {
+        "id": 13,
+        "title": "Harry Potter and the Half-Blood Prince",
+        "author": "J. K. Rowling",
+        "description": " sixth and penultimate novel in the Harry Potter"
+    }
+]
